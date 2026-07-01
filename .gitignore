@@ -1,0 +1,87 @@
+# Python
+
+**pycache**/
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Virtual Environments
+
+venv/
+.venv/
+env/
+ENV/
+
+# Build / Distribution
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Python Packaging
+
+pip-wheel-metadata/
+
+# Logs
+
+*.log
+
+# Coverage / Testing
+
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Type Checkers
+
+.mypy_cache/
+.pyright/
+
+# IDE / Editors
+
+.vscode/
+.idea/
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Rich / Cache
+
+.cache/
+
+# Local Runtime Files
+
+*.tmp
+*.bak
+
+# Project Generated Files
+
+output/
+exports/
+
+# Local Config (optional)
+
+configs.local.cfg
+
+# Executables
+
+*.exe
+*.dll
+
+# Compiled Python
+
+*.pyd
+
+# Environment Variables
+
+.env
+.env.*
+
+# Jupyter
+
+.ipynb_checkpoints/

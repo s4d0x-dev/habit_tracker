@@ -31,7 +31,7 @@ The Habit Tracker allows users to start a session, track elapsed days, and compa
 
 ```text
 ┌──────────────────────────────────────────┐
-│ THE HABIT TRACKER v0.1.1                 │
+│ THE HABIT TRACKER v0.1.2                 │
 └──────────────────────────────────────────┘
 
 Date: 2026-06-01

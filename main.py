@@ -6,11 +6,20 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
 from config import App_Configs as config
+from pathlib import Path
+import sys
+
+def resource(relative):
+    base_dir = Path(__file__).parent
+    if getattr(sys, "frozen", False):
+        base_dir = Path(sys.executable).parent
+    return base_dir / relative
 
 class ConfigManager:
+    
     def __init__(self, file: str):
         self.file = file
-        
+
     def read(self) -> dict | None:
         try:
             with open(self.file, "r", encoding="utf-8") as cfg:
@@ -106,7 +115,12 @@ class Normalizer:
 
 class CLI:
     def __init__(self):
-        self.cfg_manager = ConfigManager("./configs.cfg")
+        # self.cfg_manager = ConfigManager("./configs.cfg")
+        self.cfg_manager = ConfigManager(
+            str(resource("configs.cfg"))
+        )
+
+
         self.normalizer = Normalizer(self.cfg_manager)
         self.parser = self._build_parser()
     
